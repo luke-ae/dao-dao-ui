@@ -1,31 +1,5 @@
 import { CodeIdConfig } from '@dao-dao/types'
 
-const stargazeTestnet: CodeIdConfig = {
-  // https://github.com/CosmWasm/cw-plus
-  Cw20Base: 1931,
-  Cw4Group: 1935,
-  // https://github.com/CosmWasm/cw-nfts
-  Cw721Base: 1936,
-
-  // ContractVersion.V210
-  // https://github.com/DA0-DA0/dao-contracts/releases/tag/v2.1.0
-  Cw20Stake: 1932,
-  CwAdminFactory: 1937,
-  CwPayrollFactory: 1939,
-  CwTokenSwap: 1940,
-  CwVesting: 1941,
-  DaoCore: 1942,
-  DaoMigrator: 1943,
-  DaoPreProposeMultiple: 1946,
-  DaoPreProposeSingle: 1947,
-  DaoProposalMultiple: 1949,
-  DaoProposalSingle: 1950,
-  DaoVotingCw20Staked: 1951,
-  DaoVotingCw4: 1952,
-  DaoVotingCw721Staked: 1952,
-  DaoVotingNativeStaked: 1954,
-}
-
 const junoTestnet: CodeIdConfig = {
   // https://github.com/CosmWasm/cw-plus
   Cw20Base: 177,
@@ -78,8 +52,35 @@ const junoMainnet: CodeIdConfig = {
   DaoVotingNativeStaked: 2466,
 }
 
+const stargazeTestnet: CodeIdConfig = {
+  // https://github.com/CosmWasm/cw-plus
+  Cw20Base: 1931,
+  Cw4Group: 1935,
+  // https://github.com/CosmWasm/cw-nfts
+  Cw721Base: 1936,
+
+  // ContractVersion.V210
+  // https://github.com/DA0-DA0/dao-contracts/releases/tag/v2.1.0
+  Cw20Stake: 1932,
+  CwAdminFactory: 1937,
+  CwPayrollFactory: 1939,
+  CwTokenSwap: 1940,
+  CwVesting: 1941,
+  DaoCore: 1942,
+  DaoMigrator: 1943,
+  DaoPreProposeMultiple: 1946,
+  DaoPreProposeSingle: 1947,
+  DaoProposalMultiple: 1949,
+  DaoProposalSingle: 1950,
+  DaoVotingCw20Staked: 1951,
+  DaoVotingCw4: 1952,
+  DaoVotingCw721Staked: 1953,
+  DaoVotingNativeStaked: 1954,
+}
+
 export const CodeIdConfigs: Record<string, CodeIdConfig | undefined> = {
-  'stargaze-1': stargazeTestnet,
+  'elgafar-1': stargazeTestnet,
+  // 'stargaze-1': stargazeTestnet,
   // 'uni-6': junoTestnet,
   // 'juno-1': junoMainnet,
 }
