@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build --continue --filter=\"!@dao-dao/storybook\"",
+    "build": "turbo run build --filter=\"!@dao-dao/storybook\"",
     "build:no-apps": "turbo run build --continue --filter=\"!@dao-dao/storybook\" --filter=\"!@dao-dao/dapp\" --filter=\"!@dao-dao/sda\"",
     "dev": "yarn dapp dev",
     "start": "yarn dapp start",
@@ -38,5 +38,9 @@
   },
   "prettier": "@dao-dao/config/prettier",
   "packageManager": "yarn@1.22.11",
-  "private": true
+  "private": true,
+  "resolutions": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.37"
+  }
 }
