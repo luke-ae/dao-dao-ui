@@ -33,6 +33,7 @@ variables are in `.env.development` and available by default when running the
 yarn dev # starts nextjs dev server
 ```
 
+
 ### Advanced: Other environments
 
 By default `yarn dev` connects to the testnet. For developing against localhost
