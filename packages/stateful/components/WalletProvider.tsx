@@ -27,9 +27,9 @@ import {
 } from '@dao-dao/utils'
 
 // Assert environment variable CHAIN_ID is a valid chain.
-if (!(Object.values(ChainInfoID) as string[]).includes(CHAIN_ID)) {
-  throw new Error(`CHAIN_ID constant (${CHAIN_ID}) is an invalid chain ID.`)
-}
+// if (!(Object.values(ChainInfoID) as string[]).includes(CHAIN_ID)) {
+//   throw new Error(`CHAIN_ID constant (${CHAIN_ID}) is an invalid chain ID.`)
+// }
 
 export interface WalletProviderProps {
   children: ReactNode
@@ -42,17 +42,17 @@ export const WalletProvider = ({ children }: WalletProviderProps) => {
     <WalletManagerProvider
       // Use environment variables to determine RPC/REST nodes.
       chainInfoOverrides={[
-        {
-          // Typechecked above.
-          ...ChainInfoMap[CHAIN_ID as ChainInfoID],
-          rpc: CHAIN_RPC_ENDPOINT,
-          rest: CHAIN_REST_ENDPOINT,
-        },
-        {
-          ...ChainInfoMap[ChainInfoID.Stargaze1],
-          rpc: STARGAZE_RPC_ENDPOINT,
-          rest: STARGAZE_REST_ENDPOINT,
-        },
+        // {
+        //   // Typechecked above.
+        //   ...ChainInfoMap[CHAIN_ID as ChainInfoID],
+        //   rpc: CHAIN_RPC_ENDPOINT,
+        //   rest: CHAIN_REST_ENDPOINT,
+        // },
+        // {
+        //   ...ChainInfoMap[ChainInfoID.Stargaze1],
+        //   rpc: STARGAZE_RPC_ENDPOINT,
+        //   rest: STARGAZE_REST_ENDPOINT,
+        // },
         // Stargaze testnet.
         {
           ...ChainInfoMap[ChainInfoID.Stargaze1],

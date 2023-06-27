@@ -43,7 +43,8 @@ export const useLoadingFeaturedDaoCardInfos = (): LoadingData<
   const data = useLoadingDaoCardInfos(
     featuredDaos.map(({ coreAddress }) => coreAddress),
     // Featured DAOs only exist on mainnet.
-    ChainInfoID.Juno1
+    // ChainInfoID.Juno1
+    'elgafar-1'
   )
 
   // Once featured DAOs load once, clear cache from page static props so the DAO
